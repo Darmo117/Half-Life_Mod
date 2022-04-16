@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+license = "GNU GPLv3"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+[[mods]]
+modId = "half_life"
+version = "${file.jarVersion}"
+# A display name for the mod
+displayName = "Half-Life"
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+logoFile = "half_life.png"
+authors = "Darmo"
+description = "Adds elements from the original Half-Life games."
+[[dependencies.half_life]]
+modId = "forge"
+mandatory = true
+versionRange = "[39,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.half_life]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.1,1.19)"
+ordering = "NONE"
+side = "BOTH"
