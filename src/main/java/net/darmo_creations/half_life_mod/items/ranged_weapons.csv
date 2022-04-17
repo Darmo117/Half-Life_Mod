@@ -1,0 +1,6 @@
+weapon name,magazine size,primary ammo capacity,primary damage,primary fire rate,secondary ammo type,secondary ammo capacity,secondary damage,secondary fire rate
+Glock 17,17,250,8,200,N/A,N/A,N/A,300
+Colt Python,6,36,40,80,N/A,N/A,N/A,N/A
+SMG,50,250,5,600,40mm grenade,10,100 (direct hit),60
+Shotgun,8,125,5/pellet; 30 total,80,N/A,N/A,5/pellet; 60 total,40
+RPG,1,5,100,30,N/A,N/A,N/A,N/A
