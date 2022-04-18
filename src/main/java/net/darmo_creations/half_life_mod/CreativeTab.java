@@ -1,5 +1,6 @@
 package net.darmo_creations.half_life_mod;
 
+import net.darmo_creations.half_life_mod.items.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -13,6 +14,6 @@ public class CreativeTab extends CreativeModeTab {
 
   @Override
   public ItemStack makeIcon() {
-    return null; // TODO
+    return new ItemStack(ModItems.CROWBAR);
   }
 }

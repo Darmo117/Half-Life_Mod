@@ -12,8 +12,8 @@ public final class EntityEvents {
    */
   @SubscribeEvent
   public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-    event.player.getFoodData().setFoodLevel(1);
-    event.player.getFoodData().setSaturation(1);
+    event.player.getFoodData().setFoodLevel(20);
+    event.player.getFoodData().setSaturation(5);
   }
 
   private EntityEvents() {

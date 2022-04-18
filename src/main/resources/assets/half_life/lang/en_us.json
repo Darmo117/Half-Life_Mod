@@ -1,0 +1,12 @@
+{
+  "itemGroup.half_life": "Half Life",
+  "item.half_life.weapon_glock_17": "Glock 17",
+  "item.half_life.weapon_colt": ".357 Magnum",
+  "item.half_life.weapon_smg": "SMG",
+  "item.half_life.weapon_shotgun": "Shotgun",
+  "item.half_life.weapon_rpg": "RPG Launcher",
+  "block.half_life.spawnpoint_setter": "Spawnpoint Setter",
+  "block.half_life.kill_trigger": "Kill Trigger",
+  "block.half_life.sliding_door": "Sliding Door",
+  "block.half_life.glass_sliding_door": "Glass Sliding Door"
+}

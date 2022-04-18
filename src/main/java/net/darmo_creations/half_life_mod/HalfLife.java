@@ -1,5 +1,8 @@
 package net.darmo_creations.half_life_mod;
 
+import net.darmo_creations.half_life_mod.block_entities.ModBlockEntities;
+import net.darmo_creations.half_life_mod.block_entities.renderers.KillTriggerBlockEntityRenderer;
+import net.darmo_creations.half_life_mod.block_entities.renderers.SpawnPointSetterBlockEntityRenderer;
 import net.darmo_creations.half_life_mod.blocks.ModBlocks;
 import net.darmo_creations.half_life_mod.blocks.NoGeneratedBlockItem;
 import net.darmo_creations.half_life_mod.gui.HUD;
@@ -10,8 +13,10 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.ClientRegistry;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -30,6 +35,7 @@ public class HalfLife {
     modEventBus.addListener(this::commonSetup);
     modEventBus.addListener(this::clientSetup);
     MinecraftForge.EVENT_BUS.register(this);
+    ModBlockEntities.REGISTER.register(modEventBus);
   }
 
   private void commonSetup(final FMLCommonSetupEvent event) {
