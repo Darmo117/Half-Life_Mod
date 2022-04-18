@@ -14,6 +14,9 @@ public final class ModBlocks {
   public static final Block SPAWNPOINT_SETTER = new SpawnpointSetterBlock().setRegistryName("spawnpoint_setter");
   public static final Block KILL_TRIGGER = new KillTriggerBlock().setRegistryName("kill_trigger");
 
+  public static final Block SLIDING_DOOR = new SlidingDoorBlock().setRegistryName("sliding_door");
+  public static final Block GLASS_SLIDING_DOOR = new SlidingDoorBlock().setRegistryName("glass_sliding_door");
+
   // TEMP
   public static final Block AMMO_BOX = (new AmmoBoxBlock<>(BlockBehaviour.Properties.of(Material.WOOD), AmmoBoxBlockEntity.class) {
   }).setRegistryName("ammo_box");

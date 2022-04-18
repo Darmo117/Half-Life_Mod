@@ -1,0 +1,127 @@
+{
+  "variants": {
+    "facing=north,half=lower,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_bottom_right_closed",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_top_right_closed",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_bottom_right_open",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_top_right_open",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_bottom_left_closed",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_top_left_closed",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_bottom_left_open",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_top_left_open",
+      "y": 180
+    },
+
+    "facing=south,half=lower,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_bottom_right_closed"
+    },
+    "facing=south,half=upper,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_top_right_closed"
+    },
+    "facing=south,half=lower,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_bottom_right_open"
+    },
+    "facing=south,half=upper,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_top_right_open"
+    },
+    "facing=south,half=lower,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_bottom_left_closed"
+    },
+    "facing=south,half=upper,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_top_left_closed"
+    },
+    "facing=south,half=lower,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_bottom_left_open"
+    },
+    "facing=south,half=upper,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_top_left_open"
+    },
+
+    "facing=east,half=lower,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_bottom_right_closed",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_top_right_closed",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_bottom_right_open",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_top_right_open",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_bottom_left_closed",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_top_left_closed",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_bottom_left_open",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_top_left_open",
+      "y": 270
+    },
+
+    "facing=west,half=lower,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_bottom_right_closed",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=false": {
+      "model": "half_life:block/sliding_door_top_right_closed",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_bottom_right_open",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=true": {
+      "model": "half_life:block/sliding_door_top_right_open",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_bottom_left_closed",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false": {
+      "model": "half_life:block/sliding_door_top_left_closed",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_bottom_left_open",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=true": {
+      "model": "half_life:block/sliding_door_top_left_open",
+      "y": 90
+    }
+  }
+}

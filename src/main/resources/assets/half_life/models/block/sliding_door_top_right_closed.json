@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "half_life:block/sliding_door_side",
+		"2": "half_life:block/sliding_door_top",
+		"particle": "half_life:block/sliding_door_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 3],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 3, 16], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 3, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}
