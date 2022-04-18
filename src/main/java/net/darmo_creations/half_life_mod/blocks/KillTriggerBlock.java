@@ -7,8 +7,9 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.RenderShape;
-import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -18,7 +19,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 /**
  * A block that kills any player that collides with it.
  */
-public class KillTriggerBlock extends Block implements BlockEntityType.BlockEntitySupplier<KillTriggerBlockEntity> {
+public class KillTriggerBlock extends Block implements EntityBlock {
   public KillTriggerBlock() {
     super(Properties.of(Material.AIR).air().noCollission().noDrops());
   }
@@ -40,13 +41,13 @@ public class KillTriggerBlock extends Block implements BlockEntityType.BlockEnti
   }
 
   @Override
-  public KillTriggerBlockEntity create(BlockPos pos, BlockState state) {
+  public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
     return new KillTriggerBlockEntity(pos, state);
   }
 
   @SuppressWarnings("deprecation")
   @Override
   public RenderShape getRenderShape(BlockState state) {
-    return RenderShape.INVISIBLE;
+    return RenderShape.ENTITYBLOCK_ANIMATED;
   }
 }

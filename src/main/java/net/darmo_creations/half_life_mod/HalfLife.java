@@ -26,8 +26,9 @@ public class HalfLife {
   public static final HUD MAIN_HUD = new HUD(Minecraft.getInstance());
 
   public HalfLife() {
-    FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-    FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+    IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    modEventBus.addListener(this::commonSetup);
+    modEventBus.addListener(this::clientSetup);
     MinecraftForge.EVENT_BUS.register(this);
   }
 
@@ -41,6 +42,12 @@ public class HalfLife {
 
   @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
   public static class RegistryEvents {
+    @SubscribeEvent
+    public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
+      event.registerBlockEntityRenderer(ModBlockEntities.KILL_TRIGGER.get(), KillTriggerBlockEntityRenderer::new);
+      event.registerBlockEntityRenderer(ModBlockEntities.SPAWNPOINT_SETTER.get(), SpawnPointSetterBlockEntityRenderer::new);
+    }
+
     @SubscribeEvent
     public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
       blockRegistryEvent.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
