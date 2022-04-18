@@ -20,7 +20,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Mod.EventBusSubscriber(modid = HalfLife.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public abstract class RangedWeaponItem extends HalfLifeItem {
+public abstract class RangedWeaponItem extends HalfLifeItem implements WeaponWithAmmo {
   private final WeaponProperties weaponProperties;
 
   public RangedWeaponItem(final WeaponProperties weaponProperties) {
@@ -28,6 +28,7 @@ public abstract class RangedWeaponItem extends HalfLifeItem {
     this.weaponProperties = weaponProperties;
   }
 
+  @Override
   public FirearmAmmoType getPrimaryAmmoType() {
     return this.weaponProperties.primaryAmmoType;
   }
@@ -36,12 +37,28 @@ public abstract class RangedWeaponItem extends HalfLifeItem {
     return this.weaponProperties.primaryAmmoCapacity;
   }
 
+  @Override
+  public int getLoadedPrimaryAmmoAmount(ItemStack stack) {
+    return this.getAmmoManager(stack).getLoadedPrimaryAmmoAmount();
+  }
+
+  @Override
+  public int getReservePrimaryAmmoAmount(ItemStack stack) {
+    return this.getAmmoManager(stack).getReservePrimaryAmmoAmmount();
+  }
+
+  @Override
   public FirearmAmmoType getSecondaryAmmoType() {
     return this.weaponProperties.secondaryAmmoType;
   }
 
   public int getSecondaryAmmoCapacity() {
     return this.weaponProperties.secondaryAmmoCapacity;
+  }
+
+  @Override
+  public int getSecondaryAmmoAmount(ItemStack stack) {
+    return this.getAmmoManager(stack).getSecondaryAmmoAmount();
   }
 
   public AmmoManager getAmmoManager(final ItemStack stack) {

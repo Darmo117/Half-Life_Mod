@@ -11,11 +11,13 @@ import java.util.Map;
 
 @SuppressWarnings("unused")
 public final class ModItems {
+  // Weapons
   public static final Item CROWBAR = new CrowbarItem().setRegistryName("weapon_crowbar");
   public static final Item GLOCK_17 = new WeaponGlock17Item().setRegistryName("weapon_glock_17");
   public static final Item COLT = new WeaponColtItem().setRegistryName("weapon_colt");
   public static final Item SMG = new WeaponSMGItem().setRegistryName("weapon_smg");
   public static final Item SHOTGUN = new WeaponShotgunItem().setRegistryName("weapon_shotgun");
+  public static final Item RPG = new WeaponRPGItem().setRegistryName("weapon_rpg");
 
   /**
    * The list of all declared items for this mod.
